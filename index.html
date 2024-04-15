@@ -7,8 +7,85 @@
         <link rel='stylesheet' href='style.css'>
     </head>
     <body>
-        <div>
+        <div id='header'>
             <h1 id='title'>Jaime's Movie Survey</h1>
+            <p id='description'>Tell us a little bit about yourself and your thoughts on movies</p>
         </div>
+        <form id='survey-form'>
+            <div class='form-section'>
+                <label for='name' id='name-label'>Name</label>
+                <input id='name' type='text' placeholder='Jeremiah Puddlesworth' class='input-field'>
+            </div>
+            <div class='form-section'>
+                <label for='email' id='email-label'  class='label'>Email Address</label>
+                <input id='email' type='email' placeholder='jp@fakeemail.com' required  class='input-field'> 
+            </div>
+            <div class='form-section'>
+                <label for='number' id='number-label'  class='label'>Age</label>
+                <input type='number' min='0' max='120' placeholder='0'  class='input-field'>
+            </div>
+            <div class='form-section'>
+                <p class='question-text'>Tell us about your favorite movie</p>
+                <textarea id='favorite-film' placeholder='My favorite movie is...'  class='input-field'></textarea>
+            </div>
+            <div class='form-section'>
+                <p class='question-text'>Do you prefer watching movies at home or going to the theater?</p>
+                <select name='movie-location' id='movie-location'  class='input-field'>
+                    <option value='' selected disabled>Select an option</option>
+                    <option value='home'>Home</option>
+                    <option value='theater'>Theater</option>
+                </select>
+            </div>
+            <div id='checkboxes' class='form-section'>
+                <p>What are your favorite genres?</p>
+                <label for='horror'>
+                    <input type='checkbox' id='horror' name='genre' value='horror'> Horror
+                </label>
+                <label for='sci-fi'>
+                    <input type='checkbox' id='sci-fi' name='genre' value='sci-fi'> Sci-fi
+                </label>
+                <label for='fantasy'>
+                    <input type='checkbox' id='fantasy' name='genre' value='fantasy'> Fantasy
+                </label>
+                <label for='comedy'>
+                    <input type='checkbox' id='comedy' name='genre' value='comedy'> Comedy
+                </label>
+                <label for='drama'>
+                    <input type='checkbox' id='drama' name='genre' value='drama'> Drama
+                </label>
+                <label for='romance'>
+                    <input type='checkbox' id='romance' name='genre' value='romance'> Romance
+                </label>
+                <label for='action'>
+                    <input type='checkbox' id='action' name='genre' value='action'> Action
+                </label>
+                <label for='other'>
+                    <input type='checkbox' id='other' name='genre' value='other'> Other
+                </label>
+            </div>
+            <div class='form-section'>
+                <p class='question-text'>I prefer watching movies...</p>
+                <div id='radio-buttons'>
+                    <label class='radio'><input type='radio' name='social-pref' value='alone'> Alone</label>
+                    <label class='radio'><input type='radio' name='social-pref' value='with-friends'> With friends</label>
+                </div>
+            </div>
+            <div class='form-section'>
+                <p class='question-text'>When selecting a movie, I consider:</p>
+                <label for='actors'><input type='checkbox' value='actors' id='actors'> Actors</label>
+                <label for='director'><input type='checkbox' value='director' id='director'> Director</label>
+                <label for='producers'><input type='checkbox' value='producers' id='producers'> Producers</label>
+                <label for='writer'><input type='checkbox' value='writer' id='writer'> Writer</label>
+                <label for='plot'><input type='checkbox' value='plot' id='plot'> Plot</label>
+                <label for='genre'><input type='checkbox' value='genre' id='genre'> Genre</label>
+            </div>
+            <div class='form-section'>
+                <label for='comments' class='question-text'>Additional comments?</label>
+                <textarea id='comments' placeholder='Feel free to type anything else you have to say here.'  class='input-field'></textarea>
+            </div>
+            <div class='form-section'>
+                <button type='submit' id='submit'>Submit</button>
+            </div>
+        </form>
     </body>
 </html>
