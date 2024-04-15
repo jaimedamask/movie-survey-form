@@ -1,0 +1,68 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #422f78;
+    color: #fff;
+    margin: 30px auto;
+    width: 720px;
+}
+
+#header {
+    text-align: center;
+}
+
+#description {
+    padding-top: 11px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 9px;
+    color: #fff;
+    line-height: 1.6;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.input-field {
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 9px;
+    width: 660px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.checkboxes {
+    padding-left: 5px;
+}
+
+#radio-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    background-color: #0075AF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px;
+    width: 660px;
+}
