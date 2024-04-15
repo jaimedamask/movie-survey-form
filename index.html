@@ -14,7 +14,7 @@
         <form id='survey-form'>
             <div class='form-section'>
                 <label for='name' id='name-label'>Name</label>
-                <input id='name' type='text' placeholder='Jeremiah Puddlesworth' class='input-field'>
+                <input id='name' type='text' placeholder='Jeremiah Puddlesworth' class='input-field' required>
             </div>
             <div class='form-section'>
                 <label for='email' id='email-label'  class='label'>Email Address</label>
@@ -22,7 +22,7 @@
             </div>
             <div class='form-section'>
                 <label for='number' id='number-label'  class='label'>Age</label>
-                <input type='number' min='0' max='120' placeholder='0'  class='input-field'>
+                <input id='number' type='number' min='0' max='120' placeholder='0'  class='input-field'>
             </div>
             <div class='form-section'>
                 <p class='question-text'>Tell us about your favorite movie</p>
@@ -30,7 +30,7 @@
             </div>
             <div class='form-section'>
                 <p class='question-text'>Do you prefer watching movies at home or going to the theater?</p>
-                <select name='movie-location' id='movie-location'  class='input-field'>
+                <select name='movie-location' id='dropdown'  class='input-field'>
                     <option value='' selected disabled>Select an option</option>
                     <option value='home'>Home</option>
                     <option value='theater'>Theater</option>
